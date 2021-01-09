@@ -11,20 +11,18 @@
     <title>bküpfer</title>
 
     <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="static/css/bootstrap.css" rel="stylesheet">
     <link href="static/css/clean-blog.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <link rel="shortcut icon" type="image/png" href="static/favicon.ico">
 
@@ -45,109 +43,244 @@
             background: #5496ec;
             color: #FFFFFF;
             text-align: center;
-            padding: 2px;
+            padding: 0.2rem;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
+        #page-container {
+          position: relative;
+          min-height: 100vh;
+        }
+        #content-wrap {
+          padding-bottom: 8rem;    /* Footer height */
+        }
+
     </style>
 </head>
 
 <body>
-    <header class="intro-header" style="background-image: url('static/img/bdo-leonera.jpg')">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>bküpfer</h1>
-                    <hr class="small">
-                    <span class="subheading">Bernardo J. Küpfer Besa ー Talento</span>
-                </div>
+<div id="page-container">
+    <div id="content-wrap">
+
+<header class="intro-header" style="background-image: url('static/img/bdo-leonera.jpg')">
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="site-heading">
+                <h1>bküpfer</h1>
+                <hr class="small">
+                <span class="subheading">Bernardo J. Küpfer Besa ー Talento</span>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-xl-10" style="text-align: justify">
-                <h3>Hello, Hola, Hallo, 今日は</h3>
-                <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xl-12" style="text-align: justify">
 
-                <p>
-                    Bernardo here, Swiss-Chilean 🇨🇭🇨🇱 wizard (aka. Computer Science Engineer 🧙‍♂️),
-                    currently living in Zürich, in search for new challenges and growth opportunities.
-                </p>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Hello</a>
+                            <a class="nav-item nav-link" id="nav-es-tab" data-toggle="tab" href="#nav-es" role="tab" aria-controls="nav-es" aria-selected="false">Hola</a>
+                            <a class="nav-item nav-link" id="nav-de-tab" data-toggle="tab" href="#nav-de" role="tab" aria-controls="nav-de" aria-selected="false">Hallo</a>
+                            <a class="nav-item nav-link" id="nav-jp-tab" data-toggle="tab" href="#nav-jp" role="tab" aria-controls="nav-jp" aria-selected="false">今日は</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact Information</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <p>
+                                Hello world, Bernardo Küpfer here.
+                                <br><br>
+                                I'm a Swiss-Chilean 🇨🇭🇨🇱 wizard (aka. Computer Science Engineer 🧙‍♂️) in search of adventures around our globe.
+                                At the moment living in Züirch, Switzerland, and am planning on staying here for two whiles longer.
+                                <br><br>
+                                Currently, I'm open and in search of new professional opportunities.
+                                My main area of interest and expertise is within the realm of Machine Learning and Web Development.
+                                If you have a project which makes our world a better place and are looking for a talented software engineer, please feel encouraged to get in touch. I'd love to hear you out.
+                                <br><br>
+                                Hobbie-wise I'm a simple guy, I enjoy mountains, playing music, gaming, martial arts, and meeting interesting people.
+                                <br><br>
+                                Do not hesitate to get in touch, <br>
+                                Do not forget to smile,
+                                <br>
+                                Bernardo
+                            </p>
+                            <p>ps: Squirrels tend to run in erratic paths as to deceive their potential predators of their path so that they might escape.</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-es" role="tabpanel" aria-labelledby="nav-es-tab">
+                            <p>
+                                Hola mundo, aquí Bernardo.
+                                <br><br>
+                                Bueno como muchos ya saben, los rumores son verdad; me encuentro viviendo en Suiza, a ~12.000 [km] de casa.
+                                <br><br>
+                                De todos modos, sigue siendo fácil encontrarme, seguimos en linea.<br>
+<!--                                Contacto fácil vía steam () o directo vía Telegram o Whatzup (+41 76 584 83 02)-->
+                                Si te puedo ayudar en algo, o si es solo para jugar unos juegos o conversar, no duden en contactarme.
+                                <br><br>
+                                Cualquier cosa ya saben dónde encontrarme  😉.
+                                <br>
+                                Hasta pronto,<br>
+                                Un abrazo,
+                                <br>
+                                Bernardo
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-de" role="tabpanel" aria-labelledby="nav-de-tab">
+                            <p>
+                                Grüezi Wohl
+                                <br>
+                                Hier Bernardo Küpfer, enchanté.
+                                <br><br>
+                                Ich komme aus eine Schweizer Familie, dass jetzt in Chile wohnt.
+                                Deshalb habe ich mein ganzes Studium in Universidad de Chile gemacht, und dann hier in der Schweiz gekommen.
+                                In Moment wohne ich in Stadt Zürich, eine von der schönsten Städte der Welt.
+                                <br><br>
+                                Ich bin Computer Scientist mit speziellen Interessen, Kenntnissen und Erfahrung auf Machine Learning und Web-App Entwicklung.
+                                <br><br>
+                                Ich bin offen zum neuen professionellen Opportunitäten, das macht unsere Welt ein besser Ort für alles zu leben.
+                                Sie können in diese Website einfach mein Lebenslauf herunterladen.
+                                Denkst du, dass wir zusammenarbeiten können? Bitte fühlen Sie frei zu mir kontaktieren.
+                                <br><br>
+                                Zuletzt, Erinnere dich, das Lachen gesund ist 😉.
+                                <br>
+                                Zum Wohl,
+                                <br>
+                                Bernardo
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-jp" role="tabpanel" aria-labelledby="nav-jp-tab">
+                            <p>
+                                こんにちは皆さん、 <br>
+                                初めまして、ベルナルド・キュプファーです。<br>
+                                どうそうよろしくお願いします。
+                                <br><br>
+                                私の大きな夢は、日本に住むことです。
+                                <br><br>
+                                どうして？簡単です：
+                            </p>
+                            <ol>
+                                <li>初めに、日本語は世界一面白い言語だと思います。</li>
+                                <li>日本の文化と日本人に興味があります。</li>
+                                <li>日本のエンジニアの大学院はとても強いですね。</li>
+                            </ol>
+                            <p>
+                                このような理由により、いつか日本へ行き、大学院生になり態度思っています。<br>
+                                私はコンピューターエンジニアです。より機械学習を勉強して、本当な日本語を練習して、東京に住みます。
+                                <br><br>
+                                日本の長い冒険を始めたいよ！
+                                <br><br>
+                                二回日本へ行って来ました、関西と北海道です。スーパーすごくきれいですよ！好きでしたよー！
+                                <br><br>
+                                この夢は将来叶うと知っています。多分、2年後くらいに。とりあえず今は日本語を勉強して頑張ります！
+                                <br><br>
+                                友達になりたいですか？スペイン語とか英語とかドイツ語を教えることができます。
+                                <br><br>
+                                ありがとうごさいます、<br>
+                                ベルナルド
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 
-                <h4><b><span class="section">Int</span>erests</b></h4>
-
-                <code style="color: #98be25">todo: add missing texts, whoops!</code>
-                <code>
-                    <ul style="margin-left: -25px; margin-top: 10px">
-                        <!-- todo: add texts -->
-                        <li>Computer science,</li>
-                        <li>Machine learning,</li>
-                        <li>Software engineering,</li>
-                        <li>Full stack development,</li>
-                    </ul>
-                </code>
-
-                <br><br>
-                <!-- todo: add further content -->
-                <br><br>
-            </div>
-
-            <div class="col-md-4 col-xl-2">
-                <div class="row">
-
-                    <div class="col-md-12 monospaced" style="font-size: 15px;">
-                        &lt;<span class="monoheader">cv</span>&gt;<a href="{{ cv_link }}" target="_blank">Downloadable_CV.pdf</a>&lt;/<span class="monoheader">cv</span>&gt;<br><br>
+                            <a href="{{ cv_link }}" target="_blank" class="btn btn-primary pull-right">Downloadable_CV.pdf</a>
+                            <div class="col-md-8 mt-4 monospaced">
+                                <!--                        &lt;<span class="monoheader">contact-information</span>&gt;<br>-->
+                                &lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>
+                                &lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;<br>
+                                &lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;<br>
+                                &lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;<br>
+                                &lt;<span class="monoheader">b-day</span>&gt;13.09.91 (age {{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;<br>
+                                <!--                        &lt;/<span class="monoheader">contact-information</span>&gt;<br>-->
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-md-12 monospaced">
-                        &lt;<span class="monoheader">contact-information</span>&gt;<br>
-                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>
-                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;<br>
-                        &nbsp;&nbsp;&lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;<br>
-                        &nbsp;&nbsp;&lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;<br>
-                        &nbsp;&nbsp;&lt;<span class="monoheader">b-day</span>&gt;13.09.91 ({{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;<br>
-                        &lt;/<span class="monoheader">contact-information</span>&gt;<br>
-                    </div>
 
-                    <div class="col-md-12 monospaced">
-                        <hr>
-                        <small>( Professional references on request )</small>
-                    </div>
+<!--                -->
+                    <!--                <h3>Hello, Hola, Hallo, 今日は</h3>-->
+                    <!--                <hr>-->
 
-                    <!-- todo: update with Sids's information-->
-<!--                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">-->
-<!--                        &lt;<span class="monoheader">professional-references</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;&lt;/<span class="monoheader">name</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>-->
-<!--                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;-->
-<!--                        &lt;/<span class="monoheader">professional-reference</span>&gt;-->
-<!--                    </div>-->
+                    <!--                <p>-->
+                    <!--                    Bernardo here, Swiss-Chilean 🇨🇭🇨🇱 wizard (aka. Computer Science Engineer 🧙‍♂️),-->
+                    <!--                    currently living in Zürich, in search for new challenges and growth opportunities.-->
+                    <!--                </p>-->
 
-<!--                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">-->
-<!--                        &lt;<span class="monoheader">reference</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;Manuel&nbsp;José&nbsp;Ovalle&lt;/<span class="monoheader">name</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>-->
-<!--                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>-->
-<!--                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;-->
-<!--                        &lt;/<span class="monoheader">professional-reference</span>&gt;-->
-<!--                    </div>-->
+                    <!--                <h4><b><span class="section">Int</span>erests</b></h4>-->
 
+                    <!--                <code style="color: #98be25">todo: add missing texts, whoops!</code>-->
+                    <!--                <code>-->
+                    <!--                    <ul style="margin-left: -25px; margin-top: 10px">-->
+                    <!--                        &lt;!&ndash; todo: add texts &ndash;&gt;-->
+                    <!--                        <li>Computer science,</li>-->
+                    <!--                        <li>Machine learning,</li>-->
+                    <!--                        <li>Software engineering,</li>-->
+                    <!--                        <li>Full stack development,</li>-->
+                    <!--                    </ul>-->
+                    <!--                </code>-->
+
+                    <!--                <br><br>-->
+                    <!--                &lt;!&ndash; todo: add further content &ndash;&gt;-->
+                    <!--                <br><br>-->
                 </div>
+
+                <!--            <div class="col-md-4 col-xl-2">-->
+                <!--                <div class="row">-->
+
+                <!--                    <div class="col-md-12 monospaced" style="font-size: 15px;">-->
+                <!--                        &lt;<span class="monoheader">cv</span>&gt;<a href="{{ cv_link }}" target="_blank">Downloadable_CV.pdf</a>&lt;/<span class="monoheader">cv</span>&gt;<br><br>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="col-md-12 monospaced">-->
+                <!--                        &lt;<span class="monoheader">contact-information</span>&gt;<br>-->
+                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>-->
+                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;<br>-->
+                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;<br>-->
+                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;<br>-->
+                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">b-day</span>&gt;13.09.91 ({{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;<br>-->
+                <!--                        &lt;/<span class="monoheader">contact-information</span>&gt;<br>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="col-md-12 monospaced">-->
+                <!--                        <hr>-->
+                <!--                        <small>( Professional references on request )</small>-->
+                <!--                    </div>-->
+
+                <!--                    &lt;!&ndash; todo: update with Sids's information&ndash;&gt;-->
+                <!--&lt;!&ndash;                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;<span class="monoheader">professional-references</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;&lt;/<span class="monoheader">name</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;/<span class="monoheader">professional-reference</span>&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;<span class="monoheader">reference</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;Manuel&nbsp;José&nbsp;Ovalle&lt;/<span class="monoheader">name</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;                        &lt;/<span class="monoheader">professional-reference</span>&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+                <!--                </div>-->
+                <!--            </div>-->
             </div>
         </div>
     </div>
 
-    <br>
-    <footer class="site-footer korean-footer">
+    <footer id="footer" class="site-footer">
         <div id="footer-content">
-            <p>Copyright 2020 @ bküpfer - Powered with Django</p>
+            <p>Copyright 2021 @ bküpfer - Powered with Django</p>
         </div>
     </footer>
+</div>
 
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.js"></script>
-    <script src="static/js/clean-blog.js"></script>
+<!--    <script src="static/js/jquery.js"></script>-->
+<!--    <script src="static/js/bootstrap.js"></script>-->
+<!--<script src="static/js/clean-blog.js"></script>-->
 </body>
 
 </html>
