@@ -23,7 +23,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-
     <link rel="shortcut icon" type="image/png" href="static/favicon.ico">
 
     <style type="text/css">
@@ -40,7 +39,7 @@
             color: #f0a64d;
         }
         .site-footer {
-            background: #5496ec;
+            background: #215aa4;
             color: #FFFFFF;
             text-align: center;
             padding: 0.2rem;
@@ -55,37 +54,34 @@
         #content-wrap {
           padding-bottom: 8rem;    /* Footer height */
         }
-
     </style>
 </head>
 
 <body>
 <div id="page-container">
     <div id="content-wrap">
-
-<header class="intro-header" style="background-image: url('static/img/bdo-leonera.jpg')">
-    <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="site-heading">
-                <h1>bküpfer</h1>
-                <hr class="small">
-                <span class="subheading">Bernardo J. Küpfer Besa ー Talento</span>
+        <header id="image-header" class="intro-header" style="background-image: url('static/img/bicolor-sky-cropped.jpg')">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>bküpfer</h1>
+                        <hr class="small">
+                        <span class="subheading">Bernardo J. Küpfer Besa ー Talento</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </header>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xl-12" style="text-align: justify">
-
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Hello</a>
-                            <a class="nav-item nav-link" id="nav-es-tab" data-toggle="tab" href="#nav-es" role="tab" aria-controls="nav-es" aria-selected="false">Hola</a>
-                            <a class="nav-item nav-link" id="nav-de-tab" data-toggle="tab" href="#nav-de" role="tab" aria-controls="nav-de" aria-selected="false">Hallo</a>
-                            <a class="nav-item nav-link" id="nav-jp-tab" data-toggle="tab" href="#nav-jp" role="tab" aria-controls="nav-jp" aria-selected="false">今日は</a>
-                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact Information</a>
+                            <a onclick="swapBackgroundImage('en')" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Hello</a>
+                            <a onclick="swapBackgroundImage('es')" class="nav-item nav-link" id="nav-es-tab" data-toggle="tab" href="#nav-es" role="tab" aria-controls="nav-es" aria-selected="false">Hola</a>
+                            <a onclick="swapBackgroundImage('de')" class="nav-item nav-link" id="nav-de-tab" data-toggle="tab" href="#nav-de" role="tab" aria-controls="nav-de" aria-selected="false">Hallo</a>
+                            <a onclick="swapBackgroundImage('jp')" class="nav-item nav-link" id="nav-jp-tab" data-toggle="tab" href="#nav-jp" role="tab" aria-controls="nav-jp" aria-selected="false">今日は</a>
+                            <a onclick="swapBackgroundImage('contact')" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact & CV</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -114,10 +110,10 @@
                                 Hola mundo, aquí Bernardo.
                                 <br><br>
                                 Bueno como muchos ya saben, los rumores son verdad; me encuentro viviendo en Suiza, a ~12.000 [km] de casa en Chile.
-                                Pero que no panda el cúnico! ya volveré a visitar. Intento ir aprox. 1na vez al año de ser posible. Ya nos veremos denuevo.
+                                Pero que no panda el cúnico! ya volveré a visitar. Intento ir aprox. 1na vez al año de ser posible. Ya nos vemos denuevo.
                                 <br><br>
                                 Mientras tanto, sigue siendo fácil encontrarme, sigo estando en linea. (Steam, Telegram, Whatzup)<br>
-                                Si te puedo ayudar en algo, o si es solo para jugar unos juegos o conversar, no duden en contactarme.
+                                Si te puedo ayudar en algo, o si es para unos juegos, o solo conversar, no duden en contactarme.
                                 <br><br>
                                 Cualquier cosa ya saben dónde encontrarme  😉.
                                 <br>
@@ -182,91 +178,20 @@
                             </p>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-
                             <a href="{{ cv_link }}" target="_blank" class="btn btn-primary pull-right">Downloadable_CV.pdf</a>
                             <div class="col-md-8 mt-4 monospaced">
-                                <!--                        &lt;<span class="monoheader">contact-information</span>&gt;<br>-->
-                                &lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>
-                                &lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;<br>
-                                &lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;<br>
-                                &lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;<br>
-                                &lt;<span class="monoheader">b-day</span>&gt;13.09.91 (age {{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;<br>
-                                <!--                        &lt;/<span class="monoheader">contact-information</span>&gt;<br>-->
+                                &lt;<span class="monoheader">contact-information</span>&gt;<br>
+                                <span class="ml-4">&lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;</span><br>
+                                <span class="ml-4">&lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;</span><br>
+                                <span class="ml-4">&lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;</span><br>
+                                <span class="ml-4">&lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;</span><br>
+                                <span class="ml-4">&lt;<span class="monoheader">steam</span>&gt;asdasd&lt;/<span class="monoheader">steam</span>&gt;</span><br>
+                                <span class="ml-4">&lt;<span class="monoheader">b-day</span>&gt;13.09.91 (age {{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;</span><br>
+                                &lt;/<span class="monoheader">contact-information</span>&gt;<br>
                             </div>
                         </div>
                     </div>
-
-
-<!--                -->
-                    <!--                <h3>Hello, Hola, Hallo, 今日は</h3>-->
-                    <!--                <hr>-->
-
-                    <!--                <p>-->
-                    <!--                    Bernardo here, Swiss-Chilean 🇨🇭🇨🇱 wizard (aka. Computer Science Engineer 🧙‍♂️),-->
-                    <!--                    currently living in Zürich, in search for new challenges and growth opportunities.-->
-                    <!--                </p>-->
-
-                    <!--                <h4><b><span class="section">Int</span>erests</b></h4>-->
-
-                    <!--                <code style="color: #98be25">todo: add missing texts, whoops!</code>-->
-                    <!--                <code>-->
-                    <!--                    <ul style="margin-left: -25px; margin-top: 10px">-->
-                    <!--                        &lt;!&ndash; todo: add texts &ndash;&gt;-->
-                    <!--                        <li>Computer science,</li>-->
-                    <!--                        <li>Machine learning,</li>-->
-                    <!--                        <li>Software engineering,</li>-->
-                    <!--                        <li>Full stack development,</li>-->
-                    <!--                    </ul>-->
-                    <!--                </code>-->
-
-                    <!--                <br><br>-->
-                    <!--                &lt;!&ndash; todo: add further content &ndash;&gt;-->
-                    <!--                <br><br>-->
                 </div>
-
-                <!--            <div class="col-md-4 col-xl-2">-->
-                <!--                <div class="row">-->
-
-                <!--                    <div class="col-md-12 monospaced" style="font-size: 15px;">-->
-                <!--                        &lt;<span class="monoheader">cv</span>&gt;<a href="{{ cv_link }}" target="_blank">Downloadable_CV.pdf</a>&lt;/<span class="monoheader">cv</span>&gt;<br><br>-->
-                <!--                    </div>-->
-
-                <!--                    <div class="col-md-12 monospaced">-->
-                <!--                        &lt;<span class="monoheader">contact-information</span>&gt;<br>-->
-                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>-->
-                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+41)&nbsp;76&nbsp;584&nbsp;83&nbsp;02&lt;/<span class="monoheader">phone</span>&gt;<br>-->
-                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">github</span>&gt;<a href="https://github.com/bkupfer/" target="_blank">/bkupfer</a>&lt;/<span class="monoheader">github</span>&gt;<br>-->
-                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">linkedin</span>&gt;<a href="https://www.linkedin.com/in/bkupfer/?locale=en_US" target="_blank">/in/bkupfer</a>&lt;/<span class="monoheader">linkedin</span>&gt;<br>-->
-                <!--                        &nbsp;&nbsp;&lt;<span class="monoheader">b-day</span>&gt;13.09.91 ({{ my_age }})&lt;/<span class="monoheader">b-day</span>&gt;<br>-->
-                <!--                        &lt;/<span class="monoheader">contact-information</span>&gt;<br>-->
-                <!--                    </div>-->
-
-                <!--                    <div class="col-md-12 monospaced">-->
-                <!--                        <hr>-->
-                <!--                        <small>( Professional references on request )</small>-->
-                <!--                    </div>-->
-
-                <!--                    &lt;!&ndash; todo: update with Sids's information&ndash;&gt;-->
-                <!--&lt;!&ndash;                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;<span class="monoheader">professional-references</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;&lt;/<span class="monoheader">name</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;/<span class="monoheader">professional-reference</span>&gt;&ndash;&gt;-->
-                <!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;                    <div class="col-md-4 col-xl-2 monospaced" style="margin-top: 30px;">&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;<span class="monoheader">reference</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">name</span>&gt;Manuel&nbsp;José&nbsp;Ovalle&lt;/<span class="monoheader">name</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">email</span>&gt;mjovalle@gmail.com&lt;/<span class="monoheader">email</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &nbsp;&nbsp;&lt;<span class="monoheader">phone</span>&gt;(+56)&nbsp;9&nbsp;82596345&lt;/<span class="monoheader">phone</span>&gt;<br>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;!&ndash; &nbsp;&nbsp;&lt;<span class="monoheader">website</span>&gt;<a href="https://www.manungo.cl/">https://www.manungo.cl/</a>&lt;/<span class="monoheader">website</span>&gt;<br> &ndash;&gt;&ndash;&gt;-->
-                <!--&lt;!&ndash;                        &lt;/<span class="monoheader">professional-reference</span>&gt;&ndash;&gt;-->
-                <!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-
-                <!--                </div>-->
-                <!--            </div>-->
             </div>
         </div>
     </div>
@@ -278,9 +203,19 @@
     </footer>
 </div>
 
-<!--    <script src="static/js/jquery.js"></script>-->
-<!--    <script src="static/js/bootstrap.js"></script>-->
-<!--<script src="static/js/clean-blog.js"></script>-->
-</body>
+<script type="text/javascript">
+    function swapBackgroundImage(where) {
+        const image_locations = {
+            en: "bicolor-sky-cropped.jpg",
+            es: "bdo-leonera.jpg",
+            de: "alps-skiing.jpg",
+            jp: "otaru.jpg",
+            contact: "yukinoanimals-sapporo.jpg"
+        }
+        const img_path = 'static/img/' + image_locations[where];
+       $("#image-header").attr("style", "background-image: url(" + img_path + "); ");
+    }
+</script>
 
+</body>
 </html>
