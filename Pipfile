@@ -12,5 +12,7 @@ django-heroku = "*"
 gunicorn = "*"
 keras = "*"
 tensorflow = "*"
+tqdm = "*"
+pillow = "*"
 
 [dev-packages]
