@@ -9,6 +9,16 @@ import numpy as np
 
 from .extract_bottleneck_features import extract_Xception
 from .dog_names import DOG_NAMES
+from PIL import Image
+import io
+
+
+def bytes_to_tensor(img_bytes):
+    img = Image.open(io.BytesIO(img_bytes))
+    img = img.convert('RGB')
+    img = img.resize((224, 224), Image.NEAREST)
+    x = image.img_to_array(img)
+    return np.expand_dims(x, axis=0)
 
 
 def path_to_tensor(img_path):
@@ -34,8 +44,7 @@ class DogClassifier:
         VGG19_model.add(GlobalAveragePooling2D())
         VGG19_model.add(Dense(266, activation="relu"))
         VGG19_model.add(Dense(133, activation="softmax"))
-
-        VGG19_model.summary()
+        # VGG19_model.summary()
 
         VGG19_model.compile(
             loss='categorical_crossentropy',
@@ -46,11 +55,9 @@ class DogClassifier:
         VGG19_model.load_weights('dog_classifier/saved_models/weights.best.my_Xception_checkpoint.hdf5')
         self.VGG19_model = VGG19_model
 
-    def Xception_predict_breed(self, img_path):
-        # note: The name of the model is still `VGG19_model` just because laziness,
-        # but the bottleneck features have been changed.
+    def Xception_predict_breed(self, img_file):
         # extract bottleneck features
-        bottleneck_feature = extract_Xception(path_to_tensor(img_path))
+        bottleneck_feature = extract_Xception(bytes_to_tensor(img_file))
         # obtain predicted vector
         predicted_vector = self.VGG19_model.predict(bottleneck_feature)
         # return dog breed that is predicted by the model

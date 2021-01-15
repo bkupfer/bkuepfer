@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>bkupfer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="bernardo küpfer besa">
+    <meta name="author" content="bkupfer">
+
+    <title>bküpfer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/clean-blog.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" type="image/png" href="static/favicon.ico">
 </head>
 <body>
-    <div class="container">
-        <h3>dog breed classifier</h3>
-        <p>input an image of a dog, and we'll guess which breed of dog it is</p>
-        <p>~ 82% accuracy</p>
+<div class="container">
+    <div class="col-md-12">
+
+        <h3>Dog Breed Classifier</h3>
+        <p>Upload an image of a dog, and I'll try to guess which breed of dog it is.</p>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <input type="file" name="myfile">
-            <button type="submit">Upload</button>
+            <input type="file" accept="image/*" name="dog_image">
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
         </form>
-        <p>Prediction: {{ prediction }}</p>
+        <hr>
+        <h3>Prediction: {{ prediction }}</h3>
+        <img src="{{ img_uri }}" type="text" alt="" height="500px">
     </div>
+</div>
 </body>
 </html>

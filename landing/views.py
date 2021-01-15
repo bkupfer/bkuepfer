@@ -2,6 +2,10 @@ from django.shortcuts import render
 from datetime import date
 from dog_classifier.dog_classifier import DogClassifier
 
+from PIL import Image
+import io
+from base64 import b64encode
+
 
 # Create your views here.
 def index(request):
@@ -16,10 +20,19 @@ def index(request):
 
 
 def dog_classifier(request):
-    image_path = '../kali/photo_2021-01-14_16-46-35.jpg'
-    prediction = ''
-    if image_path:
+    prediction = input_image = ''
+    if request.FILES:
+        image_file = request.FILES['dog_image'].read()
+
+        encoded = b64encode(image_file).decode('ascii')
+        mime = "image/jpg"
+        mime = mime + ";" if mime else ";"
+        input_image = "data:%sbase64,%s" % (mime, encoded)
+
         classifier = DogClassifier()
-        prediction = classifier.Xception_predict_breed(image_path)
-        print(prediction)
-    return render(request, "dog_classifier.html", {"prediction": prediction})
+        prediction = classifier.Xception_predict_breed(image_file)
+
+    return render(request, "dog_classifier.html", {
+        "prediction": prediction,
+        "img_uri": input_image
+    })
