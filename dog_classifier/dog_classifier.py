@@ -1,8 +1,8 @@
-from keras.layers import Conv2D, MaxPooling2D, GlobalAveragePooling2D
-from keras.layers import Dropout, Flatten, Dense
-from keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, GlobalAveragePooling2D
+from tensorflow.keras.layers import Dropout, Flatten, Dense
+from tensorflow.keras.models import Sequential
 
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 from tqdm import tqdm
 
 import numpy as np
