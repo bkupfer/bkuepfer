@@ -6,10 +6,9 @@ Powered with:
 - Python 
 - Django 
 - Tensorflow 
+- Heroku.
 
-Hosted at Heroku.
-
-# How to run
+### How to run
 - Install Python >= 3.6.1
 - Install dependencies on `requirements.txt`. Use pip command: `pip install -r requirements.txt`.
 - Run Django server with `python manage.py runserver 8000`
