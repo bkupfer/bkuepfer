@@ -36,3 +36,7 @@ def dog_classifier(request):
         "prediction": prediction,
         "img_uri": input_image
     })
+
+
+def yatzi(request):
+    return render(request, "yatzi.html", {})
