@@ -24,7 +24,7 @@ pytz==2020.5
 PyYAML==5.3.1
 scipy==1.5.4
 six==1.15.0
-sqlparse==0.4.1
+sqlparse==0.4.2
 tb-nightly==1.14.0a20190603
 tensorflow==2.0.0b1
 termcolor==1.1.0
