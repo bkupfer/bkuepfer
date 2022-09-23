@@ -18,7 +18,7 @@ Keras-Preprocessing==1.1.2
 Markdown==3.3.3
 numpy==1.19.5
 Pillow==8.1.0
-protobuf==3.14.0
+protobuf==3.18.3
 psycopg2==2.8.6
 pytz==2020.5
 PyYAML==5.3.1
