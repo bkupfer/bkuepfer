@@ -8,4 +8,6 @@ build:
       - pipenv install -r requirements.txt
       - echo "build successful"
 run:
+  network:
+    port: 8880
   command: python manage.py runserver 8880
