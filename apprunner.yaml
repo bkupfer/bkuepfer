@@ -3,10 +3,15 @@ runtime: python3
 build:
   commands:
     build:
-      - pip install conda
-      - conda create --name bsite-env python=3.10
-      - conda activate bsite-end
-      - pip install -r requirements.txt
+      - echo "build (0/3)";
+      - pip install conda;
+      - echo "build (1/4)";
+      - conda create --name bsite-env python=3.10 | yes;
+      - echo "build (2/4)";
+      - conda activate bsite-end;
+      - echo "build (3/4)";
+      - pip install -r requirements.txt;
+      - echo "build (4/4)";
 run:
   command: python manage.py runserver 8880
   network:
