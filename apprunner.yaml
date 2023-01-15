@@ -3,11 +3,11 @@ runtime: python3
 build:
   commands:
     build:
-      - echo "building"
-      - pip install pipenv
-      - pipenv install -r requirements.txt
-      - echo "build successful"
+      - pip install conda
+      - conda create --name bsite-env python=3.10
+      - conda activate bsite-end
+      - pip install -r requirements.txt
 run:
   network:
     port: 8880
-  command: python manage.py runserver 8880
+  commands: python manage.py runserver 8880
