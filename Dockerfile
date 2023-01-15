@@ -14,5 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code into the container
 COPY . .
 
-# Run the development server on port 8880
+# Run the server on port 8880
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8880"]

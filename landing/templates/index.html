@@ -24,37 +24,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <link rel="shortcut icon" type="image/png" href="static/favicon.ico">
-
-    <style type="text/css">
-        .monospaced {
-            font-family: monospace
-        }
-        .monoheader {
-            color: #F92371;
-        }
-        .section {
-            color: #4194d8;
-        }
-        .subsection {
-            color: #f0a64d;
-        }
-        .site-footer {
-            background: #215aa4;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 0.2rem;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-        #page-container {
-          position: relative;
-          min-height: 100vh;
-        }
-        #content-wrap {
-          padding-bottom: 8rem;    /* Footer height */
-        }
-    </style>
 </head>
 
 <body>
@@ -138,35 +107,6 @@
                                 ありがとうごさいます、<br>
                                 ベルナルド
                             </p>
-                            {#                            <p>#}
-{#                                こんにちは皆さん、 <br>#}
-{#                                初めまして、ベルナルド・キュプファーです。<br>#}
-{#                                どうそうよろしくお願いします。#}
-{#                                <br><br>#}
-{#                                私の大きな夢は、日本に住むことです。#}
-{#                                <br><br>#}
-{#                                どうして？簡単です：#}
-{#                            </p>#}
-{#                            <ol>#}
-{#                                <li>初めに、日本語は世界一面白い言語だと思います。</li>#}
-{#                                <li>日本の文化と日本人に興味があります。</li>#}
-{#                                <li>日本のエンジニアの大学院はとても強いですね。</li>#}
-{#                            </ol>#}
-{#                            <p>#}
-{#                                このような理由により、いつか日本へ行き、大学院生になり態度思っています。<br>#}
-{#                                私はコンピューターエンジニアです。より機械学習を勉強して、本当な日本語を練習して、東京に住みます。#}
-{#                                <br><br>#}
-{#                                日本の長い冒険を始めたいよ！#}
-{#                                <br><br>#}
-{#                                二回日本へ行って来ました、関西と北海道です。スーパーすごくきれいですよ！好きでしたよー！#}
-{#                                <br><br>#}
-{#                                この夢は将来叶うと知っています。多分、2年後くらいに。とりあえず今は日本語を勉強して頑張ります！#}
-{#                                <br><br>#}
-{#                                友達になりたいですか？スペイン語とか英語とかドイツ語を教えることができます。#}
-{#                                <br><br>#}
-{#                                ありがとうごさいます、<br>#}
-{#                                ベルナルド#}
-{#                            </p>#}
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <a href="{{ cv_link }}" target="_blank" class="btn btn-primary pull-right">Downloadable_CV.pdf</a>
@@ -206,7 +146,7 @@
             contact: "yuki-no-doubutsu-sapporo.jpg"
         }
         const img_path = 'static/img/' + image_locations[where];
-       $("#image-header").attr("style", "background-image: url(" + img_path + "); ");
+        $("#image-header").attr("style", "background-image: url(" + img_path + "); ");
     }
 </script>
 
