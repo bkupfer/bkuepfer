@@ -8,6 +8,6 @@ build:
       - conda activate bsite-end
       - pip install -r requirements.txt
 run:
+  command: python manage.py runserver 8880
   network:
     port: 8880
-  commands: python manage.py runserver 8880
