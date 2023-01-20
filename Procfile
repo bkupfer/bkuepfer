@@ -1,1 +1,1 @@
-web: gunicorn bkuepfer.wsgi
+web: python manage.py migrate && gunicorn bkuepfer.wsgi

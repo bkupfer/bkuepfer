@@ -6,7 +6,7 @@ Powered with:
 - Python 
 - Django 
 - Tensorflow 
-- Heroku.
+- ~~Heroku~~ Rail
 
 ### How to run
 
