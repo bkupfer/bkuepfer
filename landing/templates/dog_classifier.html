@@ -24,10 +24,10 @@
 
     <link rel="shortcut icon" type="image/png" href="static/favicon.ico">
 </head>
-<body>
-<div class="container">
-    <div class="col-md-12">
 
+<body>
+<div class="container-fluid">
+    <div class="col-md-12">
         <h3>Dog Breed Classifier</h3>
         <p>Upload an image of a dog, and I'll try to guess which breed of dog it is.</p>
         <p>Or alternatively, upload an image of a person, and I'll tell you to which breed of dog I think it looks like.</p>
@@ -38,9 +38,18 @@
         </form>
         <hr>
         <h3>Prediction: {{ prediction }}</h3>
-        <img src="{{ img_uri }}" type="text" alt="" height="500px">
-        <img src="" alt="">
+        <div class="col-md-4">
+            <img src="{{ img_uri }}" type="text" alt="" width="100%">
+        </div>
+        <div class="col-md-8">
+            {% for i in '123456' %}
+                <img src="static/dogo_pictures/{{ prediction }}/Image_{{ i }}.jpg" alt="" width="100%">
+            {% endfor %}
+        </div>
     </div>
 </div>
 </body>
+
+{#<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>#}
+{#<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>#}
 </html>
