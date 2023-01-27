@@ -30,6 +30,7 @@
 
         <h3>Dog Breed Classifier</h3>
         <p>Upload an image of a dog, and I'll try to guess which breed of dog it is.</p>
+        <p>Or alternatively, upload an image of a person, and I'll tell you to which breed of dog I think it looks like.</p>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="file" accept="image/*" name="dog_image">
@@ -38,6 +39,7 @@
         <hr>
         <h3>Prediction: {{ prediction }}</h3>
         <img src="{{ img_uri }}" type="text" alt="" height="500px">
+        <img src="" alt="">
     </div>
 </div>
 </body>
