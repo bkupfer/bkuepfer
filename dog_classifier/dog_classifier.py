@@ -62,3 +62,4 @@ class DogClassifier:
         predicted_vector = self.VGG19_model.predict(bottleneck_feature)
         # return dog breed that is predicted by the model
         return DOG_NAMES[np.argmax(predicted_vector)]
+
