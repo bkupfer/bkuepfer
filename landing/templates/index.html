@@ -44,13 +44,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xl-12" style="text-align: justify">
-                    <nav>
+                    <nav class="navbar-dark bg-dark">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a onclick="swapBackgroundImage('en')" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Hello</a>
                             <a onclick="swapBackgroundImage('de')" class="nav-item nav-link" id="nav-de-tab" data-toggle="tab" href="#nav-de" role="tab" aria-controls="nav-de" aria-selected="false">Hallo</a>
                             <a onclick="swapBackgroundImage('es')" class="nav-item nav-link" id="nav-es-tab" data-toggle="tab" href="#nav-es" role="tab" aria-controls="nav-es" aria-selected="false">Hola</a>
                             <a onclick="swapBackgroundImage('jp')" class="nav-item nav-link" id="nav-jp-tab" data-toggle="tab" href="#nav-jp" role="tab" aria-controls="nav-jp" aria-selected="false">今日は</a>
-                            <a onclick="swapBackgroundImage('contact')" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact & CV</a>
+                            <a onclick="swapBackgroundImage('contact')" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
                             <a class="nav-item nav-link" id="nav-dog-tab" href="/dog" role="tab" aria-controls="nav-contact" aria-selected="false">Dog breed classifier</a>
                         </div>
                     </nav>
@@ -109,7 +109,7 @@
                             </p>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <a href="{{ cv_link }}" target="_blank" class="btn btn-primary pull-right">Downloadable_CV.pdf</a>
+                            {# <a href="{{ cv_link }}" target="_blank" class="btn btn-primary pull-right">Downloadable_CV.pdf</a>#}
                             <div class="col-md-8 mt-4 monospaced">
                                 &lt;<span class="monoheader">contact-information</span>&gt;<br>
                                 <span class="ml-4">&lt;<span class="monoheader">email</span>&gt;bdokupferb@gmail.com&lt;/<span class="monoheader">email</span>&gt;</span><br>
@@ -151,18 +151,36 @@
 </script>
 
 <style>
+    body {
+        background-color: #151414;
+        color: white;
+    }
     .monospaced {
         font-family: monospace
     }
     .monoheader {
         color: #F92371;
     }
-    .section {
-        color: #4194d8;
-    }
-    .subsection {
-        color: #f0a64d;
-    }
+    .navbar-dark .nav-tabs .nav-link {
+  color: #fff;
+}
+    a {
+  color: #007bff;
+}
+
+
+.navbar-dark .nav-tabs .nav-link.active {
+  background-color: #2564a2;
+}
+
+.navbar-dark .nav-tabs .nav-link:hover {
+  background-color: #343a40;
+}
+
+.navbar-dark .nav-tabs .nav-link:focus {
+  background-color: #2564a2;
+  box-shadow: none;
+}
     .site-footer {
         background: #215aa4;
         color: #FFFFFF;
@@ -172,6 +190,7 @@
         width: 100%;
         bottom: 0;
     }
+
     #page-container {
         position: relative;
         min-height: 100vh;
